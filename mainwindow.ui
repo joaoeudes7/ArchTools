@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>:: ArchTools ::</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="accessibleDescription">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>521</width>
+      <height>106</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Repositories</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnUpdateRepositories">
+       <property name="text">
+        <string>Update Repositories</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnFastestMirrors">
+       <property name="text">
+        <string>Fastest Mirrors</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnClearRepository">
+       <property name="text">
+        <string>Clear cache of Repository</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnUpdateKeys">
+       <property name="text">
+        <string>Update Keys</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>250</y>
+      <width>533</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="btnKill">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>10</y>
+       <width>94</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Parar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStatus">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>5</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>531</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menuSobre"/>
+  </widget>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
